@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    ---branco: white;
+    ---azul-base: #0162FB;
+    ---azul-original: #131237;
+    ---cinza-claro: #d9d9d9;
+    ---cinza-escuro: #333;
+    ---preto: #000000de;
+    ---amarelo: #ffa41d;
+    ---amarelo-escuro: #f29558;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    /* background: var(---cinza-escuro); */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    /* background: var(---branco); */
+    padding: 2rem 3rem;
+    min-height: 35rem;
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, .1);
+}
+
+
+#sectionlogincadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(---azul-original);
+    gap: .5rem;
+}
+
+#sectionlogincadastro h1 {
+    font-size: 3.5rem;
+}
+
+#sectionlogincadastro p {
+    color: #999;
+}
+
+#login-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.input-field button {
+    height: 3rem;
+    border-radius: 0.4rem;
+    border: none;
+    background: var(---azul-original);
+    color: var(---branco);
+    cursor: pointer;
+
+}
+
+.input-field a {
+    text-align: center;
+    color: var(---azul-original);
+
+}
+
+#login-buttons input {
+    height: 3rem;
+    padding-left: 1rem;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+    main{
+        box-shadow: none;
+    }
+    #sectionlogincadastro h1{
+        font-size: 2.725rem;
+    }
+}

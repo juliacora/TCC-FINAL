@@ -1,0 +1,103 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoliticaMente</title>
+    <link rel="stylesheet" href="./src/css/index.css">
+    <script src="./src/js/script.js" defer></script>
+    <script src="./src/js/menu.js" defer></script>
+    <link rel="shortcut icon" href="./src/images/favicon/politicamente.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <section id="container-header">
+            <div class="header-account">
+                <a href="./pages/conta.html"><button>CONTA</button></a>
+            </div>
+            <div class="header-title">
+                <h1 class="titulo">PoliticaMente</h1>
+            </div>
+
+            <nav class="menu">
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <p>Menu</p>
+                </div>
+                <div class="menu-items">
+                    <ul>
+                        <div class="group-item">
+                            <a href="index.html">
+                                <div class="item">
+                                    <img src="./src/images/menu-icons/casa.png" alt="">
+                                    <li>INICIO</li>
+                                </div>
+                            </a>
+                            
+                            <a href="./pages/sobre.html">
+                                <div class="item">
+                                    <img src="./src/images/menu-icons/botao-de-informacao.png" alt="">
+                                    <li>SOBRE</li>
+                                </div>
+                            </a>
+                            
+                            <a href="./pages/importancia.html">
+                                <div class="item">
+                                    <img src="./src/images/menu-icons/balao-de-pensamento.png" alt="">
+                                    <li>IMPORTÂNCIA</li>
+                                </div>
+                            </a>
+                            
+                            <a href="./pages/favoritos.html">
+                                <div class="item">
+                                    <img src="./src/images/menu-icons/marca-paginas.png" alt="">
+                                    <li>FAVORITOS</li>
+                                </div>
+                            </a>
+                        </div>
+                        <a href="./pages/conta.html">
+                            <div class="account">
+                                <img src="./src/images/menu-icons/perfil.png" alt="">
+                                <p>Perfil</p>
+                            </div>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+            
+        </section>
+    </header>
+    <main>
+        <section id="main-title">
+            <h2 class="subtitulo">Notícias políticas do Brasil hoje!</h2>
+        </section>
+        <section id="main-audio">
+            <div class="audio-controls">
+                <div class="button-play-container">
+                    <button id="play-button" class="play-button">
+                        <img src="./src/images/play.webp" alt="botao-play">
+                    </button>
+                </div>
+                
+                <div class="slider-container">
+                    <span id="news-title" style="left: -5%;">Notícia 1</span>
+                    <input type="range" min="0" max="9" value="0" step="1" class="slider" />
+                </div>
+                <div class="mute-play-container">
+                    <img id="volume-button" src="./src/images/volume.png">
+                </div>
+                
+            </div>
+        </section>
+
+        <section id="cards"></section>
+    </main>
+    <footer>
+        <p>&copy; Todos direitos reservados. Júlia Broilo Corá</p>
+    </footer>
+</body>
+
+</html>
